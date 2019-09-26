@@ -12,7 +12,7 @@ with open('template.json') as f:
     profiles = json.load(f)
 
 # Set random wall paper
-wall_paper_path = 'C:\\Users\\liste\\Pictures\\WallPapers'
+wall_paper_path = 'C:\\Users\\liste\\OneDrive\\Pictures\\相机导入'
 random_path = os.path.join(
     wall_paper_path, random.choice(os.listdir(wall_paper_path)))
 print(random_path)
