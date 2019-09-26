@@ -13,15 +13,16 @@ with open('template.json') as f:
 
 # Set random wall paper
 wall_paper_path = 'C:\\Users\\liste\\Pictures\\WallPapers'
-
+random_path = os.path.join(
+    wall_paper_path, random.choice(os.listdir(wall_paper_path)))
+print(random_path)
 for j in range(len(profiles['profiles'])):
-    profiles['profiles'][j]['backgroundImage'] = os.path.join(
-        wall_paper_path, random.choice(os.listdir(wall_paper_path)))
+    profiles['profiles'][j]['backgroundImage'] = random_path
     profiles['profiles'][j]['backgroundImageOpacity'] = 0.2
 
 # Unset startingDirectory
 profiles['profiles'][0].pop('startingDirectory')
 
 # Write profiles json file
-with open('profiles.json', 'w') as f:
-    json.dump(profiles, f)
+with open('..\\LocalState\\profiles.json', 'w', encoding='utf8') as f:
+    json.dump(profiles, f, ensure_ascii=False)
