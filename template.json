@@ -280,6 +280,27 @@
     "schemes" : 
     [
         {
+            "background": "#FBFBFB",
+            "black": "#403F53",
+            "blue": "#288ED7",
+            "brightBlack": "#403F53",
+            "brightBlue": "#288ED7",
+            "brightCyan": "#2AA298",
+            "brightGreen": "#08916A",
+            "brightPurple": "#D6438A",
+            "brightRed": "#DE3D3B",
+            "brightWhite": "#979797",
+            "brightYellow": "#DAAA01",
+            "cyan": "#2AA298",
+            "foreground": "#403F53",
+            "green": "#08916A",
+            "name": "Light Owl",
+            "purple": "#D6438A",
+            "red": "#DE3D3B",
+            "white": "#F0F0F0",
+            "yellow": "#E0AF02"
+        },
+        {
             "background": "#0C0C0C",
             "black": "#011627",
             "blue": "#82AAFF",
