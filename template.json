@@ -228,7 +228,7 @@
             "acrylicOpacity" : 0.8,
             "closeOnExit" : true,
             "colorScheme" : "Night Owl",
-            "commandline" : "C:\\Users\\liste\\AppData\\Local\\Programs\\Python\\Python36\\Scripts\\ipython.exe",
+            "commandline" : "C:\\Users\\zcc\\Python37\\Scripts\\ipython.exe",
             "cursorColor" : "#FFFFFF",
             "cursorShape" : "bar",
             "fontFace" : "Microsoft YaHei Mono",
