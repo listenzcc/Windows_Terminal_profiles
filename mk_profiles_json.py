@@ -10,7 +10,7 @@ import random
 # Read template json file
 with open('template.json') as f:
     profiles = json.load(f)
-
+##
 # Set random wall paper
 wall_paper_path = 'C:\\Users\\zcc\\OneDrive\\Pictures\\相机导入'
 random_path = os.path.join(
