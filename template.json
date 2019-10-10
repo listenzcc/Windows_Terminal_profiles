@@ -205,9 +205,8 @@
     "profiles" : 
     [
         {
-            "acrylicOpacity" : 0.8,
+            "acrylicOpacity" : 0.4,
             "backgroundImage" : "xxx",
-            "backgroundImageOpacity" : 0.4,
             "closeOnExit" : true,
             "colorScheme" : "Night Owl",
             "commandline" : "powershell.exe",
@@ -225,7 +224,7 @@
             "useAcrylic" : true
         },
         {
-            "acrylicOpacity" : 0.8,
+            "acrylicOpacity" : 0.4,
             "closeOnExit" : true,
             "colorScheme" : "Night Owl",
             "commandline" : "C:\\Users\\zcc\\Python37\\Scripts\\ipython.exe",
@@ -242,9 +241,9 @@
             "useAcrylic" : true
         },
         {
-            "acrylicOpacity" : 0.8,
+            "acrylicOpacity" : 0.4,
             "closeOnExit" : true,
-            "colorScheme" : "Zenburn",
+            "colorScheme" : "Night Owl",
             "commandline" : "wsl.exe",
             "cursorColor" : "#FFFFFF",
             "cursorShape" : "bar",

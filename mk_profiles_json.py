@@ -18,7 +18,7 @@ random_path = os.path.join(
 print(random_path)
 for j in range(len(profiles['profiles'])):
     profiles['profiles'][j]['backgroundImage'] = random_path
-    profiles['profiles'][j]['backgroundImageOpacity'] = 0.2
+    profiles['profiles'][j]['backgroundImageOpacity'] = 0.6
 
 # Unset startingDirectory
 profiles['profiles'][0].pop('startingDirectory')
