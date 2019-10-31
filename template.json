@@ -227,7 +227,7 @@
             "acrylicOpacity" : 0.4,
             "closeOnExit" : true,
             "colorScheme" : "Night Owl",
-            "commandline" : "C:\\Users\\zcc\\Python37\\Scripts\\ipython.exe",
+            "commandline" : "powershell.exe -ExecutionPolicy ByPass -NoExit -Command \"& 'C:\\Users\\zcc\\Anaconda3\\shell\\condabin\\conda-hook.ps1' ; conda activate 'C:\\Users\\zcc\\Anaconda3' \"",
             "cursorColor" : "#FFFFFF",
             "cursorShape" : "bar",
             "fontFace" : "Microsoft YaHei Mono",
