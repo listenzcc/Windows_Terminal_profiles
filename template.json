@@ -220,14 +220,14 @@
             "name" : "Windows PowerShell",
             "padding" : "0, 0, 0, 0",
             "snapOnInput" : true,
-            "startingDirectory" : "",
+            "startingDirectory" : null,
             "useAcrylic" : true
         },
         {
             "acrylicOpacity" : 0.4,
             "closeOnExit" : true,
             "colorScheme" : "Night Owl",
-            "commandline" : "powershell.exe -ExecutionPolicy ByPass -NoExit -Command \"& 'C:\\Users\\zcc\\Anaconda3\\shell\\condabin\\conda-hook.ps1' ; conda activate 'C:\\Users\\zcc\\Anaconda3' \"",
+            "commandline" : "ipython",
             "cursorColor" : "#FFFFFF",
             "cursorShape" : "bar",
             "fontFace" : "Microsoft YaHei Mono",

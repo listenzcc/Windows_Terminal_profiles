@@ -21,7 +21,7 @@ for j in range(len(profiles['profiles'])):
     profiles['profiles'][j]['backgroundImageOpacity'] = 0.6
 
 # Unset startingDirectory
-profiles['profiles'][0].pop('startingDirectory')
+# profiles['profiles'][0].pop('startingDirectory')
 
 # Write profiles json file
 with open('..\\LocalState\\profiles.json', 'w', encoding='utf8') as f:
