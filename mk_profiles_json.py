@@ -6,23 +6,38 @@
 import os
 import json
 import random
+from pprint import pprint
 
 # Read template json file
 with open('template.json') as f:
     profiles = json.load(f)
-##
+
 # Set random wall paper
 wall_paper_path = 'C:\\Users\\zcc\\OneDrive\\Pictures\\相机导入'
 random_path = os.path.join(
     wall_paper_path, random.choice(os.listdir(wall_paper_path)))
-print(random_path)
-for j in range(len(profiles['profiles'])):
-    profiles['profiles'][j]['backgroundImage'] = random_path
-    profiles['profiles'][j]['backgroundImageOpacity'] = 0.6
 
-# Unset startingDirectory
-# profiles['profiles'][0].pop('startingDirectory')
+# Available schemes
+schemes = {e['name']: e for e in profiles['schemes']}
+pprint(schemes)
+random_schemes = random.choice([e for e in schemes])
+
+# Choices
+choices = dict(backgroundImage=random_path,
+               colorSchemes=random_schemes,)
+defaults = dict(backgroundImage=os.path.join(wall_paper_path, 'zeppelin.png'),
+                colorSchemes='One Half Dark',)
+pprint(choices)
+
+# Setup profiles parameters
+select = choices
+for j, e in enumerate(profiles['profiles']):
+    e['backgroundImage'] = select['backgroundImage']
+    e['backgroundImageOpacity'] = 0.5
+    e['acrylicOpacity'] = 0.5
+    e['colorScheme'] = select['colorSchemes']  # random_schemes  # 'Night Owl'
 
 # Write profiles json file
+# encoding='utf-8' and ensure_ascii is for Chinese characters.
 with open('..\\LocalState\\profiles.json', 'w', encoding='utf8') as f:
     json.dump(profiles, f, ensure_ascii=False)
