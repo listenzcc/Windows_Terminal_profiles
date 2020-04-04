@@ -34,8 +34,9 @@ select = choices
 for j, e in enumerate(profiles['profiles']):
     e['backgroundImage'] = select['backgroundImage']
     e['backgroundImageOpacity'] = 0.5
-    e['acrylicOpacity'] = 0.8
-    e['colorScheme'] = defaults['colorSchemes']  # random_schemes  # 'Night Owl'
+    e['acrylicOpacity'] = 0.5
+    # select['colorSchemes']  # random_schemes  # 'Night Owl'
+    e['colorScheme'] = 'MaterialOcean'
 
 # Write profiles json file
 # encoding='utf-8' and ensure_ascii is for Chinese characters.
