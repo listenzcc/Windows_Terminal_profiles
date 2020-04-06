@@ -7,13 +7,13 @@
         "keybindings": [{
                 "command": "closeTab",
                 "keys": [
-                    "ctrl+w"
+                    "ctrl+shift+w"
                 ]
             },
             {
                 "command": "newTab",
                 "keys": [
-                    "ctrl+t"
+                    "ctrl+shift+t"
                 ]
             },
             {
@@ -79,7 +79,7 @@
             {
                 "command": "openSettings",
                 "keys": [
-                    "ctrl+,"
+                    "ctrl+shift+,"
                 ]
             },
             {
