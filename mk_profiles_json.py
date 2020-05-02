@@ -38,7 +38,7 @@ for j, e in enumerate(profiles['profiles']):
     # select['colorSchemes']  # random_schemes  # 'Night Owl'
     e['colorScheme'] = 'MaterialOcean'
 
-# Write profiles json file
+# Write settings json file
 # encoding='utf-8' and ensure_ascii is for Chinese characters.
-with open('..\\LocalState\\profiles.json', 'w', encoding='utf8') as f:
+with open('..\\LocalState\\settings.json', 'w', encoding='utf8') as f:
     json.dump(profiles, f, ensure_ascii=False)
